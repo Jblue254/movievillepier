@@ -1,4 +1,4 @@
-# Movieville – Movie Watch List Application
+# Movieville 
 
 ## About the Project
 
