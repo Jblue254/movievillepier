@@ -1,4 +1,4 @@
-import MovieItem from './MovieItem';
+import MovieItem from "./Movieitem";
 
 export default function MovieList({ movies, onDeleteMovie }) {
   return (
