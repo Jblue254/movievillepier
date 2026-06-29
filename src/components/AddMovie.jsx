@@ -7,10 +7,13 @@ export default function AddMovie({ onAddMovie }) {
     e.preventDefault();
     if (!title) return alert("Please type a movie title!");
 
+    // Dynamically gets the current calendar year 
+    const currentYear = new Date().getFullYear();
+
     onAddMovie({ 
       title: title, 
       genre: "General", 
-      year: 2026 
+      year: currentYear 
     });
     
     setTitle('');
@@ -27,7 +30,7 @@ export default function AddMovie({ onAddMovie }) {
       />
       <button 
         type="submit" 
-        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium p-2 rounded transition-colors text-sm"
+        className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium p-2 rounded transition-colors text-sm"
       >
         add movie
       </button>
